@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+   height: 100%;
+    width: 100%;
+    background-color: rgb(252,252,252);
+
+}
+header{
+    background: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 570px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+    height: 70px;
+    margin: 0 auto ;  
+}
+nav .nav_items ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    
+}
+nav .nav_items ul li a{
+    text-decoration: none;
+    color: #e6e2e2;
+    width: 0 20px;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    
+   
+}
+.content_wrapper{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 153px;
+}
+.content_wrapper img{
+    width: 300px;
+    height: 60px;
+
+}
+.content_wrapper h1{
+    font-size: 2.2rem;
+    font-weight: 100;
+    margin: 35px 0;
+    letter-spacing: 2px;
+}
+/* ...........................Popular Locations CSS................ */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .heading {
+    letter-spacing: 2.5px;
+    margin-top: 35px;
+    font-size: 32px;
+    font-weight: 400;
+    color: #1c1c1c;
+    margin-bottom: 16px;
+  }
+  .heading img{
+    vertical-align: middle;
+    width: 45px;
+  }
+  
+  .heading span {
+    font-weight: 700;
+  }
+  .description {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #4a4a4a;
+  }
+  .collections{
+    width: 85%;
+    margin: 90px auto;
+    text-align: center;
+      
+    
+  }
+.popular-location{
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    display: flex;
+  
+   
+}
+.popular-location .box{
+    width: 30%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: 15px 15px;
+    padding: 20px 13.3333px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+
+}
+.popular-location .box:hover{
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+}
+.popular-location .box a{
+    text-decoration: none;
+    color: #312f2f;
+    font-weight: 0;
+}
+.popular-location .box p{
+    margin: 0;
+
+}
+.popular-location .box .city{
+    font-size: 20px;
+   letter-spacing: 1px;
+
+}
+.popular-location .box i{
+    color: #2a2929;
+
+
+} 
+/* .....................Footer section CSS....................... */
+
+.footer {
+    width: 100%;
+    background-color: #faf9f9;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-top img {
+    width: 132px;
+    height: 28px;
+}
+
+.footer-top .footer-button button {
+    padding: 10px 30px;
+    border: 1px solid #d1d0d0;
+    font-size: 16px;
+    margin: 0 6px;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    
+}
+
+.footer-links .column {
+    min-width: 180px;
+}
+
+.footer-links .column div {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-links .column .col-links {
+    list-style: none;
+    margin-top: 16px;
+    padding: 0;
+}
+
+.footer-links .column .col-links li {
+    margin: 10px 0;
+}
+
+.footer-links .column .col-links li a {
+    text-decoration: none;
+    color: rgb(110, 109, 109);
+}
+
+.footer-links .column .col-links li a:hover {
+    color: rgb(53, 53, 53);
+}
+
+.col-links a i {
+    padding: 6px;
+    color: #fff;
+    background: rgb(51, 53, 51);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.col-links li img {
+    width: 130px;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: left;
+    color: #6b6a6a;
+}
+
+
+/* ✅ Media query for 720px and below */
+@media (max-width: 720px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-top .footer-button {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-links .column {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: 20px;
+    }
+}
